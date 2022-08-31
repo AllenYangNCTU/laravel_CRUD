@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('/test0824', function () {
     return view('test0824');
 });
+
+use App\Http\Controllers\ProductController;
+
+Route::resource('products', ProductController::class);
